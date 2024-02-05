@@ -83,10 +83,7 @@
                 <a href="https://github.com/ankx22/Navigating-The-Unknown">project page</a>
                 <p></p>
                 <p>
-                  In this project, we develop an advanced perception framework for the DJI Tello EDU drone, aimed at enabling autonomous navigation through windows of irregular and unknown shapes. The core objective is to accurately identify and traverse the largest available aperture within a barrier. 
-                </p>
-                <p>
-                  The procedure initiates by positioning the drone to ensure a comprehensive view of the entire opening, followed by capturing the window's optical flow. This flow information is then refined through post-processing techniques to delineate the contour of the largest opening and locate its central point. Once the center is determined, visual servoing techniques are utilized to align the drone's camera center with the opening's midpoint, enabling a precise and successful navigation through the opening. <strong>(hover mouse on gif to change from drone pov to cameraman pov)</strong>
+                  We developed an advanced perception system for the DJI Tello EDU drone to autonomously navigate through irregularly shaped windows by identifying and traversing the largest opening. The process involves capturing the window's optical flow, refining it to locate the opening's center, and then using visual servoing techniques to align the drone for precise navigation. <strong>(hover mouse on gif to change from drone pov to cameraman pov)</strong>
                 </p>
               </td>
             </tr>
@@ -104,10 +101,7 @@
                 <a href="https://github.com/ankx22/The-Perception-Saga">project page</a>
                 <p></p>
                 <p>
-                  In this initiative, a sophisticated perception system was engineered for the DJI Tello EDU drone, designed to facilitate accurate maneuvering through various windows with pre-known textures and approximate sizes.
-                </p>
-                <p>
-                  To realize this objective, simulation-to-reality (sim2real) strategies, including domain randomization, were employed to create a varied synthetic dataset using Blender. This dataset was then utilized to train a segmentation network capable of identifying the foremost window. Upon determining the window's center and corners, the Perspective-n-Point (PnP) technique was applied to establish 2D-3D correspondences essential for precise navigation.
+                  We engineered a sophisticated perception system for the DJI Tello EDU drone, utilizing simulation-to-reality strategies and domain randomization to train a network for accurate navigation through windows with known textures and sizes. A synthetic dataset created in Blender trained the network to identify windows, and the Perspective-n-Point (PnP) technique was used for establishing precise navigation by identifying the window's center and corners for accurate maneuvering.
                 </p>
               </td>
             </tr>
@@ -138,10 +132,7 @@
                 <a href="https://github.com/ankx22/Fly-through-real-trees-">project page</a>
                 <p></p>
                 <p>
-                  In this project, a comprehensive path and motion planning framework, integrating RRT* (Rapidly-exploring Random Trees Star) for path planning and minimum snap trajectory generation for motion planning, is deployed for 3D navigation of a DJI Tello Edu drone. This framework is initially tested in a simulated environment using Blender and subsequently applied to the real quadcopter, controlled via an NVIDIA Jetson Orin Nano.
-                </p>
-                <p>
-                  Furthermore, cascaded PID (Proportional-Integral-Derivative) controller gains dedicated to position and velocity control are meticulously tuned to ensure adherence to the generated trajectory. <strong>(hover mouse on gif to change from real to sim)</strong>
+                  In our project, we developed and tested a path and motion planning framework for 3D navigation of the DJI Tello Edu drone, combining RRT* for path planning and minimum snap trajectory for motion planning, first in Blender simulations, then on the actual drone controlled by an NVIDIA Jetson Orin Nano. This included fine-tuning cascaded PID controller gains for precise position and velocity control along the generated trajectory. <strong>(hover mouse on gif to change from real to sim)</strong>
                 </p>
               </td>
             </tr>

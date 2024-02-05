@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Ankit Talele</title>
+
+    <meta name="author" content="Ankit Talele">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Ankit Talele
+                </p>
+                <p>Hello and welcome to my portfolio. I am currently pursuing my master's degree in <a href="https://www.wpi.edu/academics/departments/robotics-engineering">Robotics Engineering Program</a> at Worcester Polytechnic Institute(WPI), Worcester, Massachusetts.
+                </p>
+                <p>
+                  I have done by bachelor's degree in <a href="https://vesit.ves.ac.in/departments/etrx/hod_desk">Electronics Engineering</a> in 2021.
+                </p>
+                <p>
+                  I am actively looking for roles in robot motion planning, path planning and perception for co-ops, internships, or full-time job opportunities.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:amtalele@wpi.edu">Email</a> &nbsp;/&nbsp;
+                  <a href="media/Resume.pdf">CV</a> &nbsp;/&nbsp;
+                  <!-- <a href="https://ankx22.github.io/">CV</a> &nbsp;/&nbsp; -->
+                  <a href="https://www.linkedin.com/in/ankit-talele/">LinkedIn</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/ankx22">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="media/image.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 60%;" alt="profile photo" src="media/image.jpg" class="hoverZoomLink" height="270"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Projects</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    
+            <!-- RBE595 P4 -->
+            <tr onmouseout="p4_stop()" onmouseover="p4_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <div class="two" id='p4_gif2'>
+                    <img src='media/output3.gif' width="180" height="200">
+                  </div>
+                  <img src='media/output3dronepov.gif' width="180" height="200">
+                </div>
+              </td>
+              <script type="text/javascript">
+                function p4_start() {
+                  document.getElementById('p4_gif2').style.opacity = "1";
+                }
+
+                function p4_stop() {
+                  document.getElementById('p4_gif2').style.opacity = "0";
+                }
+                p4_stop()
+              </script>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <strong><papertitle>Navigating the Unknown- Optical flow based structure-less gap detection for drone flight</papertitle></strong>
+                <br>
+                <a href="https://github.com/ankx22/Navigating-The-Unknown">project page</a>
+                <p></p>
+                <p>
+                  In this project, we develop an advanced perception framework for the DJI Tello EDU drone, aimed at enabling autonomous navigation through windows of irregular and unknown shapes. The core objective is to accurately identify and traverse the largest available aperture within a barrier. 
+                </p>
+                <p>
+                  The procedure initiates by positioning the drone to ensure a comprehensive view of the entire opening, followed by capturing the window's optical flow. This flow information is then refined through post-processing techniques to delineate the contour of the largest opening and locate its central point. Once the center is determined, visual servoing techniques are utilized to align the drone's camera center with the opening's midpoint, enabling a precise and successful navigation through the opening. <strong>(hover mouse on gif to change from drone pov to cameraman pov)</strong>
+                </p>
+              </td>
+            </tr>
+
+            <!-- RBE595 P3 -->
+            <tr onmouseout="p3_stop()" onmouseover="p3_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <img src='media/VideoVisualization.gif' width="180" height="180">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <strong><papertitle>The Perception Saga- Sim2Real Quadcopter Perception Stack</papertitle></strong>
+                <br>
+                <a href="https://github.com/ankx22/The-Perception-Saga">project page</a>
+                <p></p>
+                <p>
+                  In this initiative, a sophisticated perception system was engineered for the DJI Tello EDU drone, designed to facilitate accurate maneuvering through various windows with pre-known textures and approximate sizes.
+                </p>
+                <p>
+                  To realize this objective, simulation-to-reality (sim2real) strategies, including domain randomization, were employed to create a varied synthetic dataset using Blender. This dataset was then utilized to train a segmentation network capable of identifying the foremost window. Upon determining the window's center and corners, the Perspective-n-Point (PnP) technique was applied to establish 2D-3D correspondences essential for precise navigation.
+                </p>
+              </td>
+            </tr>
+            
+            <!-- RBE595 P2 -->
+            <tr onmouseout="p2_stop()" onmouseover="p2_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <div class="two" id='p2_gif2'>
+                    <img src='media/realmap1_frontview.gif' width="180" height="180">
+                  </div>
+                  <img src='media/view1.gif' width="180" height="180">
+                </div>
+              </td>
+              <script type="text/javascript">
+                function p2_start() {
+                  document.getElementById('p2_gif2').style.opacity = "1";
+                }
+
+                function p2_stop() {
+                  document.getElementById('p2_gif2').style.opacity = "0";
+                }
+                p2_stop()
+              </script>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <strong><papertitle>Fly Through Real Trees- Quadcopter motion planning stack</papertitle></strong>
+                <br>
+                <a href="https://github.com/ankx22/Fly-through-real-trees-">project page</a>
+                <p></p>
+                <p>
+                  In this project, a comprehensive path and motion planning framework, integrating RRT* (Rapidly-exploring Random Trees Star) for path planning and minimum snap trajectory generation for motion planning, is deployed for 3D navigation of a DJI Tello Edu drone. This framework is initially tested in a simulated environment using Blender and subsequently applied to the real quadcopter, controlled via an NVIDIA Jetson Orin Nano.
+                </p>
+                <p>
+                  Furthermore, cascaded PID (Proportional-Integral-Derivative) controller gains dedicated to position and velocity control are meticulously tuned to ensure adherence to the generated trajectory. <strong>(hover mouse on gif to change from real to sim)</strong>
+                </p>
+              </td>
+            </tr>
+            <!-- RBE595 P1 -->
+            <tr onmouseout="p1_stop()" onmouseover="p1_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <img src='media/filters.gif' width="180" height="180">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <strong><papertitle>3D attitude estimation using various filters</papertitle></strong>
+                <br>
+                <a href="https://github.com/ankx22/Magical-Filtering-RBE595">project page</a>
+                <p></p>
+                <p>
+                  The project involved estimating the 3D orientation or attitude from 6 Degrees Of Freedom (DOF) IMU data, which includes inputs from an accelerometer and gyroscope. This estimation was performed using five distinct methods: employing solely accelerometer data, using only gyroscope data, applying a complementary filter, utilizing a Madgwick filter, and implementing an Unscented Kalman Filter (UKF).
+                </p>
+              </td>
+            </tr>
+            <!-- RBE550 final proj -->
+            <tr onmouseout="realmpc_stop()" onmouseover="realmpc_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <a href="media/demo2.gif"><img src='media/demo2.gif' width="180" height="180"></a>
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <strong><papertitle>Multi-Robot  Motion  Planning  for  Warehouse  Management</papertitle></strong>
+                <br>
+                <a href="https://github.com/ankx22/Multi-Robot-Motion-Planning-for-Warehouse-Management-using-WHCA-">project page</a>
+                <p></p>
+                <p>
+                  Developed a system for autonomous robot navigation in warehouses, using Cooperative A* for efficient, collision-free operation. Enhanced navigation through algorithms for real-time obstacle adjustment, improving safety and efficiency. Tested methods, particularly WHCA*, showed superior dynamic obstacle management and multi-robot coordination, promising to revolutionize warehouse logistics.
+                </p>
+              </td>
+            </tr>
+            <!-- RBE550 valet -->
+            <!-- <tr onmouseout="valet_stop()" onmouseover="valet_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <img src='media/truck.gif' width="180" height="180">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <strong><papertitle>A* kinematic path planner under non holonomic constraints</papertitle></strong>
+                <br>
+                <a href="https://github.com/Chaitanya-01/valet-rbe550">project page</a>
+                <p></p>
+                <p>
+                  Created an A* kinematic path planner under non holonomic constraints for three vehicle types: Delivery Robot (differential drive), Car (Ackerman steering), Truck (A car with single trailer attached). The goal is to park between two vehicles while avoiding obstacles in between.
+                </p>
+              </td>
+            </tr> -->
+
+            <!-- RBE550 Transmission -->
+            <tr onmouseout="transmission_stop()" onmouseover="transmission_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <img src='media/path.gif' width="180" height="180">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <strong><papertitle>3D RRT Planner for gear shaft removal</papertitle></strong>
+                <br>
+                <!-- <a href="https://github.com/Chaitanya-01/3D-RRT-Planner-for-Gear-shaft-removal">project page</a> -->
+                <p></p>
+                <p>
+                  Developed an advanced Rapidly-exploring Random Tree (RRT) motion planning system designed to extract the mainshaft from a gearbox's transmission case without causing any collisions, ensuring damage prevention. This innovative approach enhances precision and safety during the removal process, significantly mitigating the risk of damage to critical gearbox components.
+                </p>
+              </td>
+            </tr>
+            
+            <!-- RBE502 final proj -->
+            <tr onmouseout="control_stop()" onmouseover="control_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <img src='media/Talele_Schloer_Project_Video.gif' width="180" height="180">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <strong><papertitle>Robust Trajectory Tracking for Quadrotor with Sliding Mode Control</papertitle></strong>
+                <br>
+                <a href="https://github.com/Chaitanya-01/robust-traj-tracking-with-SMC-rbe502">project page</a>
+                <p></p>
+                <p>
+                  Developed a compact sliding mode control for the Crazyflie 2.0 drone, enabling precise control over altitude and attitude. This controller ensures accurate navigation along desired paths and waypoints, effectively resisting external disturbances for stable flight dynamics.
+                </p>
+              </td>
+            </tr>
+
+          </tbody></table>
+
+          
+          <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Extra Curicular Work</h2>
+              </td>
+            </tr>
+          </tbody></table> -->
+          <!-- <br>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Publications</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle"><img src="media/path-to-image.png" width="180" height="120"></td>
+              <td width="75%" valign="top">
+                <p>
+                  work info <a href="link-to-work">title-of-the-link</a>.
+                </p>
+              </td>
+            </tr> -->
+            
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Source code and style cloned from <a href="https://jonbarron.info/">Jon Barron's website</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
